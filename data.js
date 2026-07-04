@@ -60,7 +60,8 @@ window.REHAB_DATA = [
     "phone": "051-240-7000",
     "sources": "https://opendata.hira.or.kr/op/opc/selectOpenData.do?sno=11925 ; https://www.hira.or.kr/ra/hosp/hospInfoAjax.do?isNewWindow=Y&isPopupYn=Y&ykiho=JDQ4MTAxMiM1MSMkMSMkMCMkODkkMzgxMzUxIzExIyQxIyQzIyQ3OSQyNjEyMjIjNDEjJDEjJDgjJDgz",
     "verification": "HIRA 2026.3 확인",
-    "notes": "재활의학과 전문의 6명 확인"
+    "notes": "재활의학과 전문의 6명 확인",
+    "youtube": "https://www.youtube.com/@PNUH"
   },
   {
     "id": "5",
@@ -81,7 +82,8 @@ window.REHAB_DATA = [
     "phone": "051-240-2400",
     "sources": "http://www.damc.or.kr ; https://opendata.hira.or.kr/op/opc/selectOpenData.do?sno=11925 ; https://www.comwel.or.kr/comwel/comp/trmt/rein02.jsp",
     "verification": "HIRA 2026.3 확인",
-    "notes": "근로복지공단 재활인증의료기관 부산 25번"
+    "notes": "근로복지공단 재활인증의료기관 부산 25번",
+    "youtube": "https://www.youtube.com/@damc1990"
   },
   {
     "id": "6",
@@ -102,7 +104,8 @@ window.REHAB_DATA = [
     "phone": "051-960-0100",
     "sources": "https://www.brhmc.or.kr/InfoHpt/M30304.do / https://www.comwel.or.kr/comwel/comp/trmt/rein02.jsp",
     "verification": "공식확인",
-    "notes": "회복기 지정 및 산재 재활인증 기관"
+    "notes": "회복기 지정 및 산재 재활인증 기관",
+    "youtube": "https://www.youtube.com/@damc1990"
   },
   {
     "id": "7",
@@ -123,7 +126,8 @@ window.REHAB_DATA = [
     "phone": "051-242-9751",
     "sources": "http://www.bah.kr ; https://opendata.hira.or.kr/op/opc/selectOpenData.do?sno=11925 ; https://www.hira.or.kr/ra/hosp/hospInfoAjax.do?ykiho=JDQ4MTAxMiM1MSMkMSMkMCMkODkkMzgxMzUxIzExIyQxIyQzIyQ5OSQyNjEyMjIjNjEjJDEjJDQjJDgz",
     "verification": "HIRA 2026.3 확인",
-    "notes": "재활의학과 전문의 수는 전화/HIRA 상세 재확인"
+    "notes": "재활의학과 전문의 수는 전화/HIRA 상세 재확인",
+    "youtube": "https://www.youtube.com/@sybah7000"
   },
   {
     "id": "8",
@@ -167,27 +171,7 @@ window.REHAB_DATA = [
     "verification": "HIRA 2026.3 확인",
     "notes": "자동차보험 청구 여부 전화확인 권장"
   },
-  {
-    "id": "10",
-    "district": "동구",
-    "name": "서강병원",
-    "type": "병원",
-    "inclusion": "재활의학과 보유/산재 재활인증",
-    "rehabDept": "있음",
-    "specialists": "확인필요",
-    "careType": "입원재활 가능성",
-    "conditions": "뇌졸중, 뇌손상, 척수손상, 파킨슨병, 보행장애, 연하·인지·언어재활, 일상생활동작 재활",
-    "specialty": "산재 재활인증 / 재활중점",
-    "recovery": "해당없음",
-    "workersComp": "재활인증 확인",
-    "autoInsurance": "확인필요",
-    "dayRehab": "확인필요",
-    "address": "부산 동구 중앙대로 514",
-    "phone": "051-715-8575",
-    "sources": "https://www.comwel.or.kr/comwel/comp/trmt/rein02.jsp",
-    "verification": "공단 재활인증 확인",
-    "notes": "근로복지공단 재활인증의료기관 부산 28번"
-  },
+
   {
     "id": "11",
     "district": "동구",
@@ -606,7 +590,8 @@ window.REHAB_DATA = [
     "phone": "051-714-4119",
     "sources": "https://opendata.hira.or.kr/op/opc/selectOpenData.do?sno=11925 ; https://www.hira.or.kr/ra/hosp/hospInfoAjax.do?ykiho=JDQ4MTAxMiM1MSMkMSMkMCMkOTkkMzgxMzUxIzIxIyQxIyQ1IyQxMyQzNjE4MzIjNDEjJDEjJDgjJDgz",
     "verification": "HIRA 2026.3 확인",
-    "notes": "HIRA 특수진료가능분야에 회복기 재활의료기관 확인"
+    "notes": "HIRA 특수진료가능분야에 회복기 재활의료기관 확인",
+    "youtube": "https://www.youtube.com/@walkrehab"
   },
   {
     "id": "32",
@@ -1005,7 +990,8 @@ window.REHAB_DATA = [
     "phone": "051-744-0123",
     "sources": "https://opendata.hira.or.kr/op/opc/selectOpenData.do?sno=11925 ; https://www.brhmc.or.kr/InfoHpt/M30304.do / https://www.comwel.or.kr/comwel/comp/trmt/rein02.jsp",
     "verification": "HIRA 2026.3 확인",
-    "notes": "낮병동 명칭은 병원 확인 권장"
+    "notes": "낮병동 명칭은 병원 확인 권장",
+    "youtube": "https://www.youtube.com/@happysharingsns"
   },
   {
     "id": "53",
@@ -1026,7 +1012,8 @@ window.REHAB_DATA = [
     "phone": "051-797-0100",
     "sources": "http://www.paik.ac.kr/haeundae/ ; https://opendata.hira.or.kr/op/opc/selectOpenData.do?sno=11925 ; https://www.hira.or.kr/ra/hosp/hospInfoAjax.do?isNewWindow=Y&isPopupYn=Y&ykiho=JDQ4MTAxMiM1MSMkMSMkMCMkODkkMzgxMzUxIzExIyQxIyQzIyQ4MiQyNjE0ODEjODEjJDEjJDIjJDgz",
     "verification": "HIRA 2026.3 확인",
-    "notes": "재활의학과 3명 확인"
+    "notes": "재활의학과 3명 확인",
+    "youtube": "https://www.youtube.com/@paik_haeundae"
   },
   {
     "id": "54",
@@ -2895,7 +2882,8 @@ window.REHAB_DATA = [
     "phone": "051-989-5000",
     "sources": "https://opendata.hira.or.kr/op/opc/selectOpenData.do?sno=11925 ; https://seumhospital.com/ ; https://seumhospital.com/sub/?pid=rehabilitation-1",
     "verification": "HIRA 2026.3 확인",
-    "notes": "기존 표 누락 보강. 회복기 지정기관은 아니며, 산재/자보/낮병동은 전화확인 필요."
+    "notes": "기존 표 누락 보강. 회복기 지정기관은 아니며, 산재/자보/낮병동은 전화확인 필요.",
+    "youtube": "https://www.youtube.com/@seumhospital"
   },
   {
     "id": "152",

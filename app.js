@@ -66,6 +66,7 @@
   };
   const mapUrl = (item) => `https://map.naver.com/p/search/${encodeURIComponent(`${item.name} ${item.district}`)}`;
   const kakaoMapUrl = (item) => `https://map.kakao.com/link/search/${encodeURIComponent(`${item.name} ${item.district}`)}`;
+  const youtubeUrl = (item) => `https://www.youtube.com/results?search_query=${encodeURIComponent(item.name)}`;
   const getShareText = (item) => {
     return `[부산 재활기관 정보 공유]
 ■ 기관명: ${item.name} (${item.type})
@@ -80,7 +81,8 @@
 ■ 주소: ${item.address}
 
 * 네이버 지도: ${mapUrl(item)}
-* 카카오맵: ${kakaoMapUrl(item)}`;
+* 카카오맵: ${kakaoMapUrl(item)}
+* 관련 유튜브: ${youtubeUrl(item)}`;
   };
 
 
@@ -144,8 +146,8 @@
     const tags = tagsFor(item);
     const favorite = state.favorites.has(String(item.id));
     const phoneLink = isPhone(item.phone)
-      ? `<a href="tel:${escapeHtml(item.phone)}">전화하기</a>`
-      : `<span class="disabled">전화 확인필요</span>`;
+      ? `<a href="tel:${escapeHtml(item.phone)}" data-phone="${escapeHtml(item.phone)}" data-name="${escapeHtml(item.name)}">전화번호</a>`
+      : ``;
     const homepage = homepageUrl(item);
 
     return `
@@ -254,8 +256,8 @@
 
   function openDetail(item) {
     const phoneAction = isPhone(item.phone)
-      ? `<a href="tel:${escapeHtml(item.phone)}">☎ 전화 걸기</a>`
-      : `<button type="button" disabled>전화 확인필요</button>`;
+      ? `<a href="tel:${escapeHtml(item.phone)}" data-phone="${escapeHtml(item.phone)}" data-name="${escapeHtml(item.name)}">☎ 전화번호 보기</a>`
+      : ``;
     const homepage = homepageUrl(item);
     
     const isRecoveryHospital = item.recovery && !ABSENT.test(item.recovery);
@@ -278,6 +280,7 @@
           <a href="${mapUrl(item)}" target="_blank" rel="noopener">네이버 지도 ↗</a>
           <a href="${kakaoMapUrl(item)}" target="_blank" rel="noopener">카카오맵 ↗</a>
           <a href="${escapeHtml(homepage || homepageSearchUrl(item))}" target="_blank" rel="noopener">${homepage ? "홈페이지 ↗" : "홈페이지 찾기 ↗"}</a>
+          <a href="${youtubeUrl(item)}" target="_blank" rel="noopener" style="background: #ffebeb; border-color: #ffd6d6; color: #e50914;">유튜브 검색 ↗</a>
           <button type="button" data-copy="${escapeHtml(item.address)}">주소 복사</button>
           <button type="button" data-share="${escapeHtml(item.id)}">정보 공유</button>
         </div>
@@ -453,6 +456,20 @@
     
     document.querySelectorAll(".guide-pane").forEach((pane) => pane.classList.remove("active"));
     document.getElementById(targetId)?.classList.add("active");
+  });
+
+  // 전화번호 클릭 시 안내 팝업창 표시 및 복사
+  document.addEventListener("click", async (event) => {
+    const phoneBtn = event.target.closest("[data-phone]");
+    if (!phoneBtn) return;
+    
+    event.preventDefault();
+    const phone = phoneBtn.dataset.phone;
+    const name = phoneBtn.dataset.name || "기관";
+    
+    await copyText(phone);
+    showToast("전화번호를 복사했습니다.");
+    alert(`📞 ${name} 전화번호 안내\n\n▶ 전화번호: ${phone}\n\n확인을 누르면 번호가 클립보드에 자동 복사됩니다.`);
   });
 
   populateFilters();
