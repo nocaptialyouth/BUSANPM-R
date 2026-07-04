@@ -31,16 +31,17 @@
       <div class="search-shell">
         <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m21 21-4.35-4.35m2.35-5.15a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z"/></svg>
         <label class="sr-only" for="searchInput">재활기관 통합 검색</label>
-        <input id="searchInput" type="search" autocomplete="off" placeholder="예: 뇌졸중, 해운대구, 요양병원, 산재, 세움병원">
+        <input id="searchInput" type="search" autocomplete="off" placeholder="예: 회복기 재활, 뇌졸중, 해운대구, 요양병원, 산재, 세움병원">
         <kbd>⌘ K</kbd>
       </div>
       <div id="heroSuggestions" class="hero-suggestions" aria-live="polite" hidden></div>
 
       <div class="quick-filters" aria-label="빠른 조건">
+        <span class="quick-filter-label" style="font-weight: 800; color: rgba(255, 255, 255, 0.75); font-size: 14px; align-self: center; margin-right: 6px; letter-spacing: -0.02em; flex-shrink: 0;">바로가기:</span>
+        <button data-preset="recovery">회복기 재활</button>
         <button data-preset="rehab">재활의학과 있음</button>
         <button data-preset="inpatient">입원재활</button>
         <button data-preset="care">요양병원</button>
-        <button data-preset="recovery">회복기 지정</button>
         <button data-preset="workers">산재 재활인증</button>
         <button data-preset="auto">자동차보험</button>
         <button data-preset="oriental">한방재활</button>
@@ -176,12 +177,18 @@
         <!-- 탭 2: 회복기 재활이란? -->
         <div class="guide-pane" id="tab-recovery">
           <h3>보건복지부 지정 '회복기 재활의료기관'</h3>
-          <p>뇌졸중, 척수손상, 골절 환자 등이 수술 후 집중 재활을 통해 사회로 조기 복귀하도록 복지부가 엄격히 지정한 병원입니다.</p>
+          <p>뇌졸중, 척수손상, 고관절·골반·대퇴 골절 환자 등이 수술 후 집중 재활을 통해 사회로 조기 복귀하도록 보건복지부가 엄격히 지정한 병원입니다.</p>
           <div class="golden-box">
-            <h4>💡 집중재활 골든타임을 놓치지 마세요!</h4>
-            <p>발병 후 <b>뇌졸중/뇌손상은 90일 이내, 척수손상은 180일 이내</b>에 지정 병원에 입원해야 집중재활 건강보험 혜택(하루 최대 4시간 집중치료, 간호간병통합서비스로 상주 보호자 불필요)을 받을 수 있습니다.</p>
+            <h4>💡 집중재활 골든타임(입원 기한)을 꼭 확인하세요!</h4>
+            <p style="margin-bottom: 8px;">지정 병원에 기한 내 입원해야 하루 최대 4시간 집중재활 건강보험 혜택 및 간호간병통합서비스를 지원받을 수 있습니다.</p>
+            <ul style="margin: 0; padding-left: 20px; font-size: 12.5px; color: rgba(255, 255, 255, 0.9); line-height: 1.6;">
+              <li><b>뇌졸중 · 뇌손상</b>: 발병/수술 후 <b>90일 이내</b> 입원 (치료 기간 최대 180일)</li>
+              <li><b>척수 손상</b>: 발병/수술 후 <b>180일 이내</b> 입원 (치료 기간 최대 2년)</li>
+              <li><b>고관절 · 골반 · 대퇴 골절 및 치환술 (단일)</b>: 발병/수술 후 <b>30일 이내</b> 입원 (치료 기간 최대 30일)</li>
+              <li><b>다발 골절 (2부위 이상) · 하지 절단</b>: 발병/수술 후 <b>60일 이내</b> 입원 (치료 기간 최대 60일)</li>
+            </ul>
           </div>
-          <p style="margin-top: 15px;">이 가이드에서 <strong>'회복기 지정'</strong> 필터를 선택하여 부산 내 지정 병원(제3기 지정 완료 기관)을 빠르게 확인해보세요.</p>
+          <p style="margin-top: 15px;">이 가이드에서 <strong>'회복기 재활'</strong> 필터를 선택하여 부산 내 지정 병원(제3기 지정 완료 기관)을 빠르게 확인해 보세요.</p>
         </div>
 
         <!-- 탭 3: 기관 유형 비교 -->
