@@ -88,12 +88,12 @@ window.REHAB_DATA = [
   {
     "id": "6",
     "district": "서구",
-    "name": "동아대학교대신요양병원",
-    "type": "요양병원",
-    "inclusion": "회복기/요양재활",
+    "name": "동아대학교대신병원",
+    "type": "병원",
+    "inclusion": "회복기/재활의학과 전문 병원",
     "rehabDept": "있음",
     "specialists": "확인필요",
-    "careType": "입원재활/요양재활",
+    "careType": "입원재활/외래재활",
     "conditions": "뇌졸중, 뇌손상, 척수손상, 파킨슨병, 보행장애, 연하·인지·언어재활, 일상생활동작 재활",
     "specialty": "회복기 재활의료기관 / 산재 재활인증",
     "recovery": "제3기 지정",
@@ -104,7 +104,7 @@ window.REHAB_DATA = [
     "phone": "051-960-0100",
     "sources": "https://www.brhmc.or.kr/InfoHpt/M30304.do / https://www.comwel.or.kr/comwel/comp/trmt/rein02.jsp",
     "verification": "공식확인",
-    "notes": "회복기 지정 및 산재 재활인증 기관",
+    "notes": "2023년 5월 동아대학교대신요양병원에서 동아대학교대신병원(일반병원)으로 개칭 및 제3기 회복기 재활의료기관 지정",
     "youtube": "https://www.youtube.com/@damc1990"
   },
   {
